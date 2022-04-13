@@ -1,0 +1,139 @@
+/*este é um exemple de  css externo*/
+
+ol{
+	color: blue;
+}
+
+#blue{
+	color: blue;
+}
+
+.oi{
+	color: pink;
+}
+
+/*comentário*/
+
+#cm{
+	background-color: blue;
+	width: 1cm;
+	height: 1cm;
+}
+
+#mm{
+	background-color: red;
+	width: 1mm;
+	height: 1mm;
+}
+
+#in{
+	background-color: blue;
+	width: 1in;
+	height: 1in;
+}
+
+#px{
+	background-color: blue;
+	width: 10px;
+	height: 10px;
+}
+
+#pt{
+	background-color: red;
+	width: 10pt;
+	height: 10pt;
+}
+
+#pc{
+	background-color: blue;
+	width: 10pc;
+	height: 10pc;
+}
+
+.container{
+font-size: 25px;
+width: 300px;
+background-color: red;
+}
+
+.inside{
+font-size: 2em;
+width: 1 vfrem;
+background-color: blue;
+}
+
+#base{
+height: 10px;
+background-color: red;
+}
+
+#caixa{
+	background-color: blue;
+	color: white;
+	margin-top: 10px;
+	margin-left: 10px	;
+}
+
+.borda{
+	border-width: 5px;
+	border-style: solid;
+	color: darkred;
+	border-radius: 50%;
+}
+
+.quadrado{
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+}
+
+.link{
+	text-decoration: none;
+	color: darkred;
+	cursor: crosshair;
+	/*background: #ff00ff;*/
+	padding: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 10px;
+	border: 2px solid #ff00ff;
+}
+
+/*.link:hover{
+	background: #ff00ff;
+	color: white;
+}*/
+
+.link:active{
+	background: #ff00ff;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

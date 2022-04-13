@@ -1,0 +1,74 @@
+CSS - CASCADING STYLE SHEETS
+
+CSS INLINE
+
+o css inline é utilizado dentro de um conteúdo no html.
+para ativá-lo, basta inserir o atributo "style" dentro do conteúdo que se deseja estilizar.
+
+------------------------------------------------------------
+
+CSS INTERNO
+
+o css interno é utilizado no <head> do html, dessa forma a organização do código fica melhor e sabe-se que nesta parte do código as informações ficarão ocultas.
+
+entretanto, caso não seja utilizado algum seletor, o css irá estilizar todos os elementos indicado na identação do <style>.
+
+------------------------------------------------------------
+
+CSS EXTERNO
+
+o css irá utilizar um arquivo que está fora do index.html.
+portanto, será necessário criar um arquivo .css. 
+
+para este caso deve-se abrir a tag <link> (tag similar a <a>), como principal atributo, temos: "href" "rel" e "type"
+
+sendo:
+
+href: para indicar a url.
+
+rel: especifica a relação entre o documento atual (index.html) e o documento que será "linkado" (qualquercoisa.css)
+
+type: "text/css" - este atributo não é mais necessário no html 5 mas para as versões anteriores deve ser especificado
+
+de modo geral, será utilizado o css externo. em alguns
+casos o css interno ou inline será necessário.
+
+----------------------------------------
+
+CLASSES e IDs
+
+IDs
+
+o id (identificador) serve para informar
+ao css o que deve ser estilizado.
+para isso, é necessário incluir dentro
+de uma tag o atributo "id" e nomeá-lo.
+
+para que o css reconheça o "id", 
+precisar incluir "#" para informar ao 
+css de que ele precisa incontrar o 
+identificador no html.
+
+ex: <p>Hello</p>
+	<p>World</p>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

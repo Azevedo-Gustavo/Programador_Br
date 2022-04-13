@@ -1,0 +1,158 @@
+TAG
+
+dá sentido as informações que estão sendo criadas no site
+
+ex:
+
+<nomeDaTag>Meu título</nomeDaTag>
+
+Tag de abertura: <nomeDaTag>
+Tag de fechamento: </nomeDaTag>
+
+Tag de autofechamento: <none/>* ou <none>
+
+*esse modelo era utilizado nas versões anteriores, no html5 não há necessidade de incluir a "/".
+
+usualmente usa-se a 1ª palavra da tag em minúsculo e a 2ª maiúscula (<nomeDaTag>) porem, pode ser utilizada outras duas formas
+(<nome-da-tag>) ou (<NomeDaTag>). essas formas fazem parte das boas práticas dos códigos.
+
+-------------------------------------------------
+
+ESTRUTURA BÁSICA
+
+Para iniciar um hmtl deve ser declarado o seguinte código:
+
+<!DOCTYPE html> 
+
+*declaração necessário para iniciar um hmtl, este modelo é referente ao html5
+
+para dar sequência a criação do site será necessário abrir a tag "html"
+
+<html>
+</html> #o autopreenchimento do sublime já entende que se você abriu uma tag, ela deve ser fechada.
+
+dentro da estrutura do site temos o "head", toda informação que não envolve o corpo "body" do site será incluída dentro da tag <head> e tudo que for fazer parte do site ficará na tag <body>.
+
+há uma tag que será sempre utilizada dentro do <head> que é a tag <meta>.
+
+<meta> é uma tag de autofechamento e será utilizado para especificar um caracter, descrição da página, keywords, autor do documento e view-port*.
+
+*área visível do site.
+
+<meta> atua "dentro" do site, é uma informação que o usuário do site não encherga.
+
+caso seja utilizado um caracter especial deve ser informado dentro da tag, o atributo "charset" e o tipo de linguagem, sendo comum utilizar a "UTF-8".
+
+----------------------------------------------
+
+TÍTULOS E PARÁGRAFOS
+
+
+o título <h1> é sempre o mais importante - o título princial - do site. Ao todo temos 6 tipos de títulos.
+
+pelas boas práticas o site deve ter somente 1 título <h1>.
+
+a tag <p> é o parágrafo
+
+por padrão, o html pula uma linha após a tag ser fechada. isso poderá ser alterado com o css.
+mas independente disso, o código deve ser organizado para que assim eventuais manutenções sejam realizadas com agilidade.
+
+--------------------------------------------
+
+COMENTÁRIO
+
+<!--Comentário-->
+
+--------------------------------------------
+
+FORMATAÇÃO
+
+Negrito: pode ser utilizada a tag <b> (não semântica) de "bold" ou <strong> (semântica).
+
+a diferença entre as tags está na semântica. enquanto a tag <bold> torna a palavra/texto em negrito, a tag <strong> informa para o sites de busca que a palavra/texto em negrito é importante. 
+
+por conta disso a tag <strong> vêm sendo utilizada no lugar de <bold>.
+
+Itálico: pode ser utilizada a tag <i> (não semântica) de "italic" ou <em> de "emphasis" (semântica).
+
+Marca texto: <mark>
+
+com o css a cor da marcação poderá ser alterada. por padrão o html utiliza a cor amarela.
+
+Letra pequena: <small> essa formatação diminui o tamanho da letra, mas sem considerar tamanho da fonte. essa formatação pode ser utilizada no word e power point.
+
+Texto removido: <del> quando um texto foi removido e houve uma substituição, é utilizado o <del>. ele deixa o texto antigo riscado.
+
+a tag sem semântica para essa formatação é a <s>.
+
+Texto inserido: <ins> utilizada quando um novo texto é inserido.
+
+a tag sem semântica para essa formatação é a <u>.
+
+Texto subescrito: <sub> essa formatação deixa o texto um pouco abaixo da linha padrão. bastante utilizado em textos científicos ou fórmulas matemáticas.
+
+Texto sobreescrito: <sup> essa formatação deixa o texto um pouco acima da linha padrão. bastante utilizado em textos científicos ou fórmulas matemáticas.
+
+nem todas as formatações serão utilizadas pelo html, mas é importante lembrar que algumas delas possui semântica e outras não.
+
+------------------------------------------
+
+LINKS
+
+para criar um link no html é utilizado a tag <a> e complementá-la com o atributo "href" que indica o destino (href é principal atributo de <a>).
+
+------------------------------------------
+
+IMAGENS
+
+a tag para imagens é a <img>.
+a tag <img> possui alguns atributos.
+
+um dos atributos principais é o source "src" para utilizá-lo deve ser incluído o link/diretório da imagem.
+
+outro atributo útil para trabalhar com imagens é o "alt". ela indica para os buscadores o que é aquela imagem (esta referencia é criada pelo programador).
+
+a imagem pode ser ter suas dimensões alteradas através dos atributos "width" e/ou "height". caso seja utilizado apenas um desses atributos, a imagem sofrerá a alteração de forma proporcional.
+
+pode-se criar uma imagem com link utilizando a tag <a> e dentra dela a tag <img> como um CONTEÚDO do ELEMENTO <a>.
+
+o "href" será o link do site que está a imagem.
+
+*a tag <img> é uma tag de auto-fechamento.
+
+------------------------------------------
+
+QUEBRA DE LINHA
+
+para criar quebra de linha, basta utilizar a tag <br>.
+
+------------------------------------------
+
+LISTAS
+
+LISTA NÃO ORDENADA
+
+a lista não ordenada é utilizada a tag <ul>
+"unorded list".
+
+para item da lista é necessário abrir a tag <li> "list item".
+
+este tipo de lista é utilizado quando a ordem dos itens não importa.
+
+LISTA ORDENADA
+
+para a lista ordenada é utilizada a tag <ol> "ordered list" e mantendo a listagem dos itens com a tag <li>.
+
+<li> forma o CONTEÚDO do ELEMENTO <ul>/<ol>.
+
+------------------------------------------
+
+TABELAS
+
+para criar uma tabela, primeiro deve-se abrir a tag <table>. para criar o cabeçalho da tabela abrimos a tag <tr> "table row" e posteriormente a tag <th> "table head"
+
+para cada linha criada para a tabela, deve ser aberta a tag <tr> mas para os incluir os dados, deve-se utilizar a tag <td> "table data".
+
+*por padrão o html centraliza o cabeçalho para casos em que os dados são grandes. para deixar mais apresentável, o css será utilizado.
+
+------------------------------------------

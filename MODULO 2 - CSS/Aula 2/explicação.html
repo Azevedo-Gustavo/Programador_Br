@@ -1,0 +1,211 @@
+CSS - CASCADING STYLE SHEETS
+
+CSS INLINE
+
+o css inline é utilizado dentro de um conteúdo no html.
+para ativá-lo, basta inserir o atributo "style" dentro do conteúdo que se deseja estilizar.
+
+------------------------------------------------------------
+
+CSS INTERNO
+
+o css interno é utilizado no <head> do html, dessa forma a organização do código fica melhor e sabe-se que nesta parte do código as informações ficarão ocultas.
+
+entretanto, caso não seja utilizado algum seletor, o css irá estilizar todos os elementos indicado na identação do <style>.
+
+------------------------------------------------------------
+
+CSS EXTERNO
+
+o css irá utilizar um arquivo que está fora do index.html.
+portanto, será necessário criar um arquivo .css. 
+
+para este caso deve-se abrir a tag <link> (tag similar a <a>), como principal atributo, temos: "href" "rel" e "type"
+
+sendo:
+
+href: para indicar a url.
+
+rel: especifica a relação entre o documento atual (index.html) e o documento que será "linkado" (qualquercoisa.css)
+
+type: "text/css" - este atributo não é mais necessário no html 5 mas para as versões anteriores deve ser especificado
+
+de modo geral, será utilizado o css externo. em alguns
+casos o css interno ou inline será necessário.
+
+----------------------------------------
+
+CLASSES e IDs
+
+IDs
+
+o id (identificador) serve para informar
+ao css o que deve ser estilizado.
+para isso, é necessário incluir dentro
+de uma tag o atributo "id" e nomeá-lo.
+
+para que o css reconheça o "id", 
+precisar incluir "#" para informar ao 
+css de que ele precisa incontrar o 
+identificador no html.
+
+ex: <p id="oi">Hello</p>
+	<p>World</p>
+
+	#oi{
+		color: red;
+	}
+
+o id pode ser utilizado uma única vez.
+então, caso haja necessidade de utilizar
+o mesmo id para outros elementos será
+necessário utilizar uma "classe".
+
+isso se dá pois o id pode ser a referência
+de um link "anchor" tag <a>.
+
+esse link criará um atalho no site para o
+local referenciado.
+
+CLASSES
+
+as classes funcionam da mesma forma que o
+"id" mas caracter utilizado para classe é
+o ".".
+
+para informar no html que está sendo
+utilizado uma classe, basta incluir como
+atributo "class" no elemento.
+
+ex: <p class="oi">Hello</p>
+	<p class="oi">World</p>
+
+	.oi{
+		color: red;
+	}
+
+diferente da "id" a "classe" pode ser
+referenciada em vários elementos.
+
+-------------------------------------------
+
+BACKGROUND
+
+background-color: ; - cor de fundo do elemento
+background-image: url(); imagem de fundo do elementO (pasta/site)
+background-repeat: no-repeat; caso a imagem seja menor que o elemento, ela não se repetirá
+background-size: cover; imagem será adptada ao tamanho do elemento
+background-attachment: fixed; a imagem não acompanha o scroll da página
+background-attachment: scroll; a imagem acompanha o scroll da página
+background-attachment: local; a imagem acompanha o scroll do elemento
+background-position: ; center, right
+
+pode se encadear os tipos de background mas será necessário respeitar a hierarquia.
+
+*para fazer um comentário no css: /* mensagem */
+
+-------------------------------------------
+
+DIV
+
+a tag <div> serve para compilar o máximo de elementos que se queira estilizar de forma harmônica.
+
+pode ser utilizado mais de uma <div> dentro do range de elementos considerados.
+
+por padrão a tag <div> tem o display: block
+ou seja, ocupa a linha toda assim como a
+tag <p>
+
+-------------------------------------------
+
+UNIDADES DE MEDIDAS (FIXAS)
+
+
+UNIDADES DE MEDIDAS (RELATIVAS)
+	
+revisar aulas
+fazer pesquisas
+
+-------------------------------------------
+
+MARGIN E PADDLING
+
+MARGIN faz a ateração do esquadro de
+"fora para dentro"
+
+PADDLING faz a ateração do esquadro de
+"dentro para fora"
+
+-------------------------------------------
+
+BORDER
+
+tipos de estilos de borda
+
+border-style: dotted; borda pontilhada
+
+border-style: dashed; borda tracejada
+
+border-style: solid; borda padrão
+
+border-style: none; não existe
+
+border-style: hidden; borda escondida
+
+é possível estilizar cada aresta da borda,
+basta indicar o lado que queira alterar
+
+border-top-color: red; a aresta de cima
+ficará vermelha e as demais preto.
+
+por padrão a borda é preta.
+
+-------------------------------------------
+
+BOX MODEL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
